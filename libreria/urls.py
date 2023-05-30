@@ -13,6 +13,8 @@ urlpatterns = [
     path('libros/crear/', views.crear, name='crear'),
     path('libros/editar/', views.editar, name='editar'),
     path('libros/<int:libro_id>/descargar-pdf/', views.descargar_pdf, name='descargar_pdf'),
+    path('libros/eliminar/<int:id>',views.eliminar, name='eliminar'),
+    path('libros/editar/<int:id>',views.editar, name='editar'),
 ]
 # Configuración para servir archivos estáticos y de medios en desarrollo
 if settings.DEBUG:

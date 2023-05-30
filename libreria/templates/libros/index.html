@@ -40,9 +40,9 @@
                         </td>
                         <td>{{ libro.descripcion }}</td>
                         <td>
-                            <a name="" id="" class="btn btn-info" href="{% url 'libreria:editar' %}" role="button">Editar</a>
+                            <a name="" id="" class="btn btn-info" href="{% url 'libreria:editar' libro.id %}" role="button">Editar</a>
                             |
-                            <a name="" id="" class="btn btn-danger" href="#" role="button">Borrar</a>
+                            <a name="" id="" class="btn btn-danger" href="{% url 'libreria:eliminar' libro.id %}" role="button">Borrar</a>
                             |
                             <a name="" id="" class="btn btn-success" href="{{ libro.pdf.url }}" download="{{ libro.pdf.name }}" role="button">Descargar</a>
                         </td>

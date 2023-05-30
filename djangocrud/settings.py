@@ -122,7 +122,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, '')
-MEDIA_URL = '/libros/'
+MEDIA_URL = '/imagenes/'
 
 
 # Default primary key field type
