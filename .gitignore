@@ -5,3 +5,20 @@ env
 db.sqlite3
 /static
 .DS_Store
+
+# Ignorar archivos y directorios generados por Django
+*.sqlite3
+*/__pycache__/
+*/migrations/
+
+# Ignorar archivos estáticos y media generados por Django
+/static/
+/media/
+
+# Ignorar archivos de imágenes y PDF en directorios específicos
+/libros/imagenes/
+/pdfs/
+
+# Ignorar archivos y directorios generados por tu entorno de desarrollo
+/.venv/
+/.vscode/
